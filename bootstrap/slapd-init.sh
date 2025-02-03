@@ -4,9 +4,9 @@ set -eu
 readonly DATA_DIR="/bootstrap/data"
 readonly CONFIG_DIR="/bootstrap/config"
 
-readonly LDAP_DOMAIN=planetexpress.com
-readonly LDAP_ORGANISATION="Planet Express, Inc."
-readonly LDAP_BINDDN="cn=admin,dc=planetexpress,dc=com"
+readonly LDAP_DOMAIN=globomantics.local
+readonly LDAP_ORGANISATION="Globomantics, Inc."
+readonly LDAP_BINDDN="cn=admin,dc=globomantics,dc=local"
 readonly LDAP_SECRET=GoodNewsEveryone
 
 readonly LDAP_SSL_KEY="/etc/ldap/ssl/ldap.key"
@@ -105,15 +105,6 @@ load_initial_data() {
           -D ${LDAP_BINDDN} \
           -w ${LDAP_SECRET} \
           -f ${ldif}
-    done
-
-    local data=$(find ${DATA_DIR}/large-group -maxdepth 2 -name \*_\*.ldif -type f | sort)
-    for ldif in ${data}; do
-      echo "Processing file ${ldif}..."
-      ldapadd -x -H ldapi:/// \
-        -D ${LDAP_BINDDN} \
-        -w ${LDAP_SECRET} \
-        -f ${ldif}
     done
 }
 

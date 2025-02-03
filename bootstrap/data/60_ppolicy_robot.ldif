@@ -1,4 +1,4 @@
-dn: cn=robot,ou=ppolicies,dc=planetexpress,dc=com
+dn: cn=robot,ou=ppolicies,dc=globomantics,dc=local
 objectClass: pwdPolicy
 objectClass: organizationalRole
 cn: robot

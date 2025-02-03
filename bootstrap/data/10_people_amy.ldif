@@ -1,4 +1,4 @@
-dn: cn=Amy Wong+sn=Kroker,ou=people,dc=planetexpress,dc=com
+dn: cn=Amy Wong+sn=Kroker,ou=people,dc=globomantics,dc=local
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -7,7 +7,7 @@ cn: Amy Wong
 sn: Kroker
 description: Human
 givenName: Amy
-mail: amy@planetexpress.com
+mail: amy@globomantics.local
 ou: Intern
 uid: amy
 userPassword:: e3NzaGF9M3UzcUdCSmFMc2tiUEg0OVJrYlFtUk9HTktFb1lOUXZkU2lOZmc9P

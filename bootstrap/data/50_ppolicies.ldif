@@ -1,4 +1,4 @@
-dn: ou=ppolicies,dc=planetexpress,dc=com
+dn: ou=ppolicies,dc=globomantics,dc=local
 objectClass: top
 objectClass: organizationalUnit
 description: Password policies

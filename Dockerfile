@@ -1,5 +1,4 @@
 FROM debian:12-slim
-MAINTAINER Rafael Römhild <rafael@roemhild.de>
 
 # Install slapd and requirements
 RUN apt-get update \

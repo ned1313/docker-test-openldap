@@ -10,5 +10,5 @@ changetype: add
 objectClass: olcOverlayConfig
 objectClass: olcPPolicyConfig
 olcOverlay: {2}ppolicy
-olcPPolicyDefault: cn=default,ou=ppolicies,dc=planetexpress,dc=com
+olcPPolicyDefault: cn=default,ou=ppolicies,dc=globomantics,dc=local
 olcPPolicyHashCleartext: TRUE
